@@ -3,7 +3,7 @@
 
 
 Resume of Ivan Shavliuga built with Webpack + Pug + Postcss.
-<img src="https://github.com/IvanShavliuga/resume/blob/master/screenshots/Screenshot1.png"> 
+
 ![screenshot](https://github.com/IvanShavliuga/resume/blob/master/screenshots/Screenshot1.png)
 ![screenshot](https://github.com/IvanShavliuga/resume/blob/master/screenshots/Screenshot2.png)
 ![screenshot](https://github.com/IvanShavliuga/resume/blob/master/screenshots/Screenshot3.png)
