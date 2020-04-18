@@ -1,6 +1,14 @@
 
 # Resume
 
+
+Resume of Ivan Shavliuga built with Webpack + Pug + Postcss.
+
+![screenshot](https://github.com/IvanShavliuga/resume/blob/master/screenshots/screenshot1.png)
+![screenshot](https://github.com/IvanShavliuga/resume/blob/master/screenshots/screenshot2.png)
+![screenshot](https://github.com/IvanShavliuga/resume/blob/master/screenshots/screenshot3.png)
+![screenshot](https://github.com/IvanShavliuga/resume/blob/master/screenshots/screenshot4.png)
+
 # Getting started
 
 After checking out the repo, run:
