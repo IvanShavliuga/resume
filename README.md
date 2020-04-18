@@ -1,14 +1,12 @@
-[![CircleCI](https://circleci.com/gh/acro5piano/resume/tree/master.svg?style=svg)](https://circleci.com/gh/acro5piano/resume/tree/master)
 
 # Resume
 
-Resume of Kazuya Gosho, built with Webpack + Pug + Postcss.
+Resume of Ivan Shavliuga built with Webpack + Pug + Postcss.
 
-We can create static website really easilly with Netlify. Thanks!!
-
-https://cranky-heisenberg-039d2a.netlify.com/
-
-![screenshot](https://github.com/acro5piano/resume/blob/master/screenshot.png)
+![screenshot](https://github.com/IvanShavliuga/resume/blob/master/screenshots/screenshot1.png)
+![screenshot](https://github.com/IvanShavliuga/resume/blob/master/screenshots/screenshot2.png)
+![screenshot](https://github.com/IvanShavliuga/resume/blob/master/screenshots/screenshot3.png)
+![screenshot](https://github.com/IvanShavliuga/resume/blob/master/screenshots/screenshot4.png)
 
 Why I created this repository: https://dev.to/acro5piano/5-reasons-why-git-based-resume-is-awesome-127
 
@@ -17,8 +15,8 @@ Why I created this repository: https://dev.to/acro5piano/5-reasons-why-git-based
 After checking out the repo, run:
 
 ```
-yarn install
-yarn start
+npm install
+npm start
 ```
 
 open http://localhost:3000 and you can see my resume.
@@ -48,47 +46,3 @@ To create Japanese resume, `HtmlWebpackPlugin` in `webpack.config.js` like this:
     )
   ]
 ```
-
-# Screenshot
-
-To take a screenshot, just run
-
-- `yarn build:html`
-- `yarn screenshot`
-
-This runs your Chrome headlessly and take an image.
-
-# Production build
-
-To build all assets, run:
-
-```
-yarn build
-```
-
-This does:
-
-- Bundle files with Webpack production mode
-- Take screenshot as `png` and `pdf`
-
-# Netlify
-
-Soon
-
-# TODO
-
-- [x] Add script for taking screenshot.
-- [x] Create GitHub page or something to render this as actual web page. → netlify
-- [x] Add script for build. Generate multilingual PDF to `/dist`.
-- [ ] Page too big to fit A4. Time to divide.
-- [ ] Use React.js or Vue.js for template rendering. This is for HMR and scoped CSS and internationalization.
-- [ ] Add ESLint for stability.
-- [ ] Add Flow for type-safe and null-safe.
-- [ ] Internationalization. currently I need `en` and `ja`. For the time being create `index.ja.pug`.
-- [ ] `screenshot` command for all languages.
-
-# Contribution
-
-I am not a native English speaker, so if you find something wrong, please create an issue or send a pr.
-
-Thanks in advance.
