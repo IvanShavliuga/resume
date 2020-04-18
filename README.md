@@ -1,6 +1,7 @@
 
 # Resume
 
+
 Resume of Ivan Shavliuga built with Webpack + Pug + Postcss.
 
 ![screenshot](https://github.com/IvanShavliuga/resume/blob/master/screenshots/screenshot1.png)
