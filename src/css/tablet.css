@@ -1,22 +1,22 @@
 @media (min-width: 836px) and (max-width: 1056px) {
     .name {
-       width:340px;
-       
+       width:335px!important;
+       margin-left: 10px!important;
     }
     .userdata h1 {
        letter-spacing:0;
        font-size:20pt;    
     }
     .userdata {
-       width:350px;    
+       width:330px!important;    
     }
     .userdata div{ 
-       width:100px;
-       height:100px;
-       margin-top:35px; 
+       width:80px!important;
+       height:80px!important;
+       margin-top:35px!important; 
     }
     .works article, .creative li {
-	    width:90%;
+	    width:90%!important;
 	 } 
 	 .creative li { 
 	    margin-right: 0;
@@ -57,28 +57,32 @@
       flex-direction:column-reverse;
       justify-content:center;
       padding: 10px;  
+      flex-wrap:wrap;
+      align-items: center;
+      align-content: center;
   }
   
  .name {
-       width:350px;
+       width:350px!important;
        margin: 0 auto;
     }
   .contacts {
      margin: 0 auto;
-     width:350px;  
+     width:250px;  
+     clear: both;
   } 
     .userdata h1 {
-       letter-spacing:0;
-       font-size:20pt;
-       margin-top:35px;    
+       letter-spacing:0!important;
+       font-size:20pt!important;
+       margin-top:35px!important;    
     }
     .userdata {
-       width:350px;    
+       width:350px!important;    
     }
     .userdata div{ 
-       width:100px;
-       height:100px;
-       margin-top:15px; 
+       width:80px!important;
+       height:80px!important;
+       margin-top:15px!important; 
     }
     .works article, .creative li {
 	    width:90%;
