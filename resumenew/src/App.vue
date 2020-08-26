@@ -1,5 +1,5 @@
 <template lang="pug">
-div#app
+div
   include sections/header
   main
     include sections/nav
@@ -8,11 +8,11 @@ div#app
 </template>
 
 <script>
-
 export default {
   name: 'App',
   data() {
     return {
+      profile: {},
       name: "Ivan Shavliuga",
       geo:"Republic Belarus, Novopolotsk",
       prof:"junior Frontend developer",
@@ -129,6 +129,15 @@ export default {
         link:"https://www.codepen.io/ivanshavliuga"
       }]
     }
+  },
+  created() {
+    this.$store.dispatch('initData')
+    this.profile = this.$store.getters.profile;
+    this.social = this.$store.getters.links;
+    this.work = this.$store.getters.works;
+    this.portfolio = this.$store.getters.portfolio;
+    this.creative = this.$store.getters.creative;
+    this.education = this.$store.getters.edu;
   }
 }
 </script>
