@@ -3,13 +3,13 @@ nav
     li.item 
       h2 Profile 
       .desc 
-        h3 {{name}} 
+        h3 {{profile.name}} 
         p 
-          b {{prof}}
+          b {{profile.prof}}
         p I make site layout to order. 
         p 
-          a(:href="email") {{email}}
-          span.linkprint iva.drakon.nov@gmail.com 
+          a(:href="profile.email") {{profile.email}}
+          span.linkprint {{profile.email}} 
         p(title="The user wanted to hide their phone number") {{phone}} 
     li.item
       h2 Interests
@@ -24,7 +24,7 @@ nav
       h2 Skills 
       .desc 
         ul.skills 
-          li( v-for="(s,k) in skills" :key="s") {{s}}
+          li( v-for="(s,k) in profile.skills" :key="s") {{s}}
     li.item 
       h2 Education 
       .desc
