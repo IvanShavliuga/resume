@@ -11,8 +11,6 @@ Resume of Ivan Shavliuga built with Webpack + Pug.
 
 # Getting started
 
-# resumenew
-
 ## Project setup
 ```
 npm install
