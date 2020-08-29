@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 114" width="114" height="114">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #3449dc } 
+	</style>
+	<g id="Fixed">
+		<g id="Icon">
+			<path id="Ellipse 3 copy 3" class="shp0" d="M56.98 -0.03C88.44 -0.03 113.94 25.5 113.94 57C113.94 88.5 88.44 114.03 56.98 114.03C25.53 114.03 0.03 88.5 0.03 57C0.03 25.5 25.53 -0.03 56.98 -0.03Z" />
+		</g>
+	</g>
+</svg>

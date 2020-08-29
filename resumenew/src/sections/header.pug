@@ -2,19 +2,19 @@ header
   .contacts
     ol
       li 
-        p {{geo}} 
+        p {{profile.geo}} 
       li
         p 
-          a(:href="github" :title="github") github.com
-          span.linkprint {{github}}
+          a(:href="profile.github" :title="profile.github") github.com
+          span.linkprint {{profile.github}}
         p 
-          a(:href="email" :title="email") {{email}}
-          span.linkprint {{email}}
+          a(:href="profile.email" :title="profile.email") {{profile.email}}
+          span.linkprint {{profile.email}}
       li  
-        p(title="The user wanted to hide their phone number") {{phone}}
+        p(title="The user wanted to hide their phone number") {{profile.phone}}
         p The user wanted to hide their phone number
   .name 
      .userdata
        .photouser
-       h1 {{name}}
-       p {{prof}}
+       h1 {{profile.name}}
+       p {{profile.prof}}
