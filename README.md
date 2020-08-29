@@ -2,7 +2,7 @@
 # Resume
 
 
-Resume of Ivan Shavliuga built with Webpack + Pug + Postcss.
+Resume of Ivan Shavliuga built with Webpack + Pug.
 
 ![screenshot](https://github.com/IvanShavliuga/resume/blob/master/screenshots/Screenshot1.png)
 ![screenshot](https://github.com/IvanShavliuga/resume/blob/master/screenshots/Screenshot2.png)
@@ -11,37 +11,27 @@ Resume of Ivan Shavliuga built with Webpack + Pug + Postcss.
 
 # Getting started
 
-After checking out the repo, run:
+# resumenew
 
+## Project setup
 ```
 npm install
-npm start
 ```
 
-open http://localhost:3000 and you can see my resume.
-
-# Write your resume with this template
-
-Feel free to write your resume with this template, if you are odd enough to do so.
-
-- `src/app.postcss` is for css
-- `src/index.pug` is for template
-- If you want to write your resume with sass, just add `sass-loader`
-
-# Internationalization
-
-Unfortunatelly, we only have really legacy option to this setting.
-
-To create Japanese resume, `HtmlWebpackPlugin` in `webpack.config.js` like this:
-
+### Compiles and hot-reloads for development
 ```
-  plugins: [
-    new HtmlWebpackPlugin(
-      {
-        template: './index.ja.pug',
-        filename: 'index.html',
-        inject: false
-      }
-    )
-  ]
+npm run serve
 ```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

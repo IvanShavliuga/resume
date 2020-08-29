@@ -1,4 +1,4 @@
-# resumenew
+# resume of Ivan Shavliuga
 
 ## Project setup
 ```
