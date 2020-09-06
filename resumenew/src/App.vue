@@ -13,37 +13,7 @@ export default {
   data() {
     return {
       profile: {},
-      name: "Ivan Shavliuga",
-      geo:"Republic Belarus, Novopolotsk",
-      prof:"junior Frontend developer",
-      email:"iva.drakon.nov@gmail.com",
-      github:"https://github.com/IvanShavliuga/",
-      phone:"+375 ** *** ** 23",
-      skills: [
-        "html5","css3","scss","less","pug","Angular (beginners)","vue.js (2.x)","Vue-Router","Vuex","npm","Webpack",
-        "Bootstrap (4.x)","EcmaScript (2015)","git","adaptive design"
-      ],
-      education:[{
-        years: "2006-2011, 3.5 years",
-        caption: "Polotsk state University",
-        link:"https://psu.by",
-        desc:"information technology software"
-      },{
-        years: "2018-2019",
-        caption: "INTUIT (Free courses)",
-        link:"https://intuit.ru",
-        desc:"basic JavaScript, HTML, CSS"
-      },{
-        years: "2019 - now",
-        caption: "GeekBrains (Free courses)",
-        link:"https://geekbrains.ru",
-        desc:"advanced JavaScript, HTML, CSS"
-      },{
-        years: "2020 - now",
-        caption: "ITVDN (Free course landing page)",
-        link:"https://itvdn.com",
-        desc:"basic Pug, SCSS"
-      }],
+      education:[],
       work: [],
       portfolio:[],
       creative:[],
@@ -63,7 +33,7 @@ export default {
 </script>
 
 <style>
-@import './assets/css/style.less'
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
