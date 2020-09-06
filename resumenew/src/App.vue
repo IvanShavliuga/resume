@@ -17,7 +17,8 @@ export default {
       work: [],
       portfolio:[],
       creative:[],
-      social: []
+      social: [],
+      fl:"none"
     }
   },
   created() {
@@ -28,6 +29,7 @@ export default {
     this.portfolio = this.$store.getters.portfolio;
     this.creative = this.$store.getters.creative;
     this.education = this.$store.getters.edu;
+    this.fl = this.$store.getters.fl;
   }
 }
 </script>

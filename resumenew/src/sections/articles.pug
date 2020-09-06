@@ -15,5 +15,6 @@ section
       p(v-for="(l,k1) in c.linkslist" :key="'creative_'+k1+'_'+k" :id="'creative_'+k+'_'+k1")
         a(:href="l.link" target="_blank" :title="l.name") {{l.name}}
         span.linkprint {{l.link}}
+  section(v-html="fl")
       
             

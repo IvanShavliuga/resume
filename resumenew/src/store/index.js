@@ -9,7 +9,8 @@ export default new Vuex.Store({
     edu: [],
     portfolio: [],
     works: [],
-    links: []
+    links: [],
+    fl:'bn'
   },
   actions: {
     initData({commit}) {
@@ -43,6 +44,10 @@ export default new Vuex.Store({
      xhr.open("GET", "https://ivanshavliuga.github.io/resume/api/links.json", false);
      xhr.send();
      state.links = window.JSON.parse(xhr.responseText);
+     //profile
+     xhr.open("GET", "https://ivanshavliuga.github.io/pages/gulp-first.html", false);
+     xhr.send();
+     state.fl = xhr.responseText;
    }
  },
  getters: {
@@ -51,6 +56,7 @@ export default new Vuex.Store({
    edu: state=>{return state.edu},
    portfolio: state=>{return state.portfolio},
    works: state=>{return state.works},
-   links: state=>{return state.links}
+   links: state=>{return state.links},
+   fl: state=>{return state.fl}
  }
 })
