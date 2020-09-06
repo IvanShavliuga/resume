@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 143 224" width="143" height="224">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #3449dc;stroke-width: 4.167 } 
+		.shp1 { fill: #ffc33c } 
+		.txt2 { font-size: 46px;line-height: 125px;fill: #252b2d;font-weight: 600;font-family: "OpenSans-Semibold", "Open Sans";text-anchor: middle } 
+	</style>
+	<g id="Fixed">
+		<g id="Interests">
+			<g id="1">
+				<g id="Group 8">
+					<path id="Ellipse 2" fill-rule="evenodd" class="shp0" d="M71.48 0C110.96 0 142.97 32 142.97 71.48C142.97 110.96 110.96 142.97 71.48 142.97C32 142.97 0 110.96 0 71.48C0 32 32 0 71.48 0Z" />
+					<path id="handset" class="shp1" d="M89.74 97.58L89.74 93.29L89.69 93.29C89.71 92.93 89.74 92.58 89.74 92.21L89.74 73.95L89.74 68.58C89.74 58.5 81.44 50.33 71.19 50.33C60.95 50.33 52.64 58.5 52.64 68.58L52.64 73.95L52.64 92.21C52.64 92.58 52.68 92.93 52.7 93.29L52.64 93.29L52.64 97.58C52.64 97.58 41.73 97.4 41.73 85.77C41.73 79.17 45.24 76.26 48.28 74.97L48.28 68.58C48.28 56.13 58.54 46.03 71.19 46.03C83.85 46.03 94.11 56.13 94.11 68.58L94.11 74.97C97.14 76.26 100.65 79.17 100.65 85.77C100.65 97.4 89.74 97.58 89.74 97.58ZM57.01 97.58L54.83 97.58L54.83 73.95L57.01 73.95L57.01 97.58ZM87.56 97.58L85.38 97.58L85.38 73.95L87.56 73.95L87.56 97.58Z" />
+					<text id="Music " style="transform: matrix(1,0,0,1,76.191,224.112)" >
+						<tspan x="0" y="0" class="txt2">Music </tspan>
+					</text>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
