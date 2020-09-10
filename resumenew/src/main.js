@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import store from './store'
+import router from './router'
 //import Axios from 'axios'
 import App from './App.vue'
 import './assets/css/style.less'
@@ -10,6 +11,7 @@ Vue.config.productionTip = false
 
 new Vue({
   store,
+  router,
   render: h => h(App),
   mounted() {
     this.$store.dispatch('initData')

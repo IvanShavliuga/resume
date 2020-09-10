@@ -10,16 +10,17 @@ nav
         p 
           a(:href="profile.email") {{profile.email}}
           span.linkprint {{profile.email}} 
-        p(title="The user wanted to hide their phone number") {{phone}} 
+        p
+          router-link(to="/Post") my posts 
     li.item
       h2 Interests
       .images
         .interes
-          p Music
+          p Podcast
         .interes
-          p Gaming
+          p Books
         .interes
-          p Biking    
+          p Design    
     li.item 
       h2 Skills 
       .desc 
