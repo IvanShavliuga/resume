@@ -1,15 +1,9 @@
 <template lang="pug">
-div
-  include sections/header
-  main
-    include sections/nav
-    router-view
-  include sections/footer
+  include sections/articles
 </template>
-
 <script>
 export default {
-  name: 'App',
+  name: 'Home',
   data() {
     return {
       profile: {},
