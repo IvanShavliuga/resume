@@ -30,7 +30,6 @@ export default {
     this.creative = this.$store.getters.creative;
     this.education = this.$store.getters.edu;
     this.fl = this.$store.getters.fl;
-    this.$router.push('home')
   }
 }
 </script>
