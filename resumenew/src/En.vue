@@ -8,7 +8,7 @@ div
 </template>
 <script>
 export default {
-  name: 'Home',
+  name: 'En',
   data() {
     return {
       profile: {},
@@ -21,7 +21,7 @@ export default {
     }
   },
   created() {
-    this.$store.dispatch('initData')
+    this.$store.dispatch('langEn')
     this.profile = this.$store.getters.profile;
     this.social = this.$store.getters.links;
     this.work = this.$store.getters.works;

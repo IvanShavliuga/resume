@@ -18,3 +18,11 @@ header
        .photouser
        h1 {{profile.name}}
        p {{profile.prof}}
+       p 
+         span(v-for="(s,k) in social" :key="social+k*3")
+           a(:href="s.link" target="_blank" :id="s.name+'_'+k") {{s.name}}
+       p
+         span
+           router-link(to="/ru") RU
+         span |
+           router-link(to="/en") EN

@@ -1,10 +1,5 @@
 <template lang="pug">
-div
-  include sections/header
-  main
-    include sections/nav
-    router-view
-  include sections/footer
+router-view
 </template>
 
 <script>
@@ -18,7 +13,8 @@ export default {
       portfolio:[],
       creative:[],
       social: [],
-      fl:"none"
+      fl:"none",
+      langflag: "ru"
     }
   },
   created() {
@@ -30,6 +26,7 @@ export default {
     this.creative = this.$store.getters.creative;
     this.education = this.$store.getters.edu;
     this.fl = this.$store.getters.fl;
+    this.$router.push('/')
   }
 }
 </script>
