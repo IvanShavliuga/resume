@@ -27,7 +27,7 @@ nav
       h2 Skills 
       .desc 
         ul.skills 
-          li( v-for="(s,k) in profile.skills" :key="s") {{s}}
+          li(v-for="(s,k) in profile.skills" :key="s") {{s}}
     li.item 
       h2 Education 
       .desc
@@ -46,5 +46,3 @@ nav
               a(:href="w.link" target="_blank") {{w.caption}}
               span.linkprint {{w.caption}} ({{w.link}})
               span {{w.desc}}
-    
-        
