@@ -24,7 +24,6 @@ export default {
     }
   },
   created() {
-    this.$store.dispatch('initData')
     this.portfolio = this.$store.getters.portfolio;
     this.profile = this.$store.getters.profile;
     this.social = this.$store.getters.links;
