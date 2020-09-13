@@ -1,10 +1,5 @@
 <template lang="pug">
-div
-  include sections/header
-  main
-    include sections/nav
-    section(v-html="fl")
-  include sections/footer
+section(v-html="fl")
 </template>
 <script>
 export default {

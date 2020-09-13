@@ -1,10 +1,5 @@
 <template lang="pug">
-div
-  include sections/header
-  main
-    include sections/nav
-    include sections/articles
-  include sections/footer
+include sections/articles
 </template>
 <script>
 export default {
@@ -21,7 +16,6 @@ export default {
     }
   },
   created() {
-    this.$store.dispatch('initData')
     this.profile = this.$store.getters.profile;
     this.social = this.$store.getters.links;
     this.work = this.$store.getters.works;
