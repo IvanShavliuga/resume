@@ -11,10 +11,17 @@ export default {
   name: 'Post',
   data() {
     return {
+      profile: {},
+      education:[],
+      work: [],
+      portfolio:[],
+      creative:[],
+      social: [],
       fl:"none"
     }
   },
   created() {
+    this.$store.dispatch('loadPage')
     this.fl = this.$store.getters.fl;
     this.profile = this.$store.getters.profile;
     this.social = this.$store.getters.links;

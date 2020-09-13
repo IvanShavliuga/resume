@@ -21,9 +21,19 @@ export default new Vuex.Store({
     },
     langRu({commit}) {
       commit('LANG_RU')
+    },
+    loadPage({commit}) {
+      commit('LOAD_PAGE')
     }
   },
   mutations: {
+    LOAD_PAGE(state) {
+      var xhr = new XMLHttpRequest();
+      //page
+      xhr.open("GET", "https://ivanshavliuga.github.io/pages/gulp-first.html", false);
+      xhr.send();
+      state.fl = xhr.responseText;
+    },
     LANG_RU(state) {
       var xhr = new XMLHttpRequest();
       //profile
@@ -50,10 +60,6 @@ export default new Vuex.Store({
       xhr.open("GET", "https://ivanshavliuga.github.io/resume/api/ru/links.json", false);
       xhr.send();
       state.links = window.JSON.parse(xhr.responseText);
-      //profile
-      xhr.open("GET", "https://ivanshavliuga.github.io/pages/gulp-first.html", false);
-      xhr.send();
-      state.fl = xhr.responseText;
     },
     LANG_EN(state) {
       var xhr = new XMLHttpRequest();
