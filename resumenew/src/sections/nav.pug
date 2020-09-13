@@ -9,11 +9,13 @@ nav
         p I make site layout to order. 
         p 
           a(:href="profile.email") {{profile.email}}
-          span.linkprint {{profile.email}} 
+          span.linkprint {{profile.email}}
         p
-          router-link(to="/Post") my posts
+          router-link(to="/") Home page
         p
-          router-link(to="/Portfolio") my portfolio
+          router-link(to="/List") My posts
+        p
+          router-link(to="/Portfolio") My portfolio
     li.item
       h2 Interests
       .images
