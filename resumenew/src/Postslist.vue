@@ -6,7 +6,7 @@ div
     section
       h2 My posts
       .works
-        article(v-for="(p,k) in posts" :key="k" :id="'article-'+k")
+        article(v-for="(p,k) in posts" :key="k" style="width:80%" :id="'article-'+k")
           h3 {{p.title}}
           a(@click="pselect(p.link)" target="_blank") {{p.title}}
           span {{p.category}}
