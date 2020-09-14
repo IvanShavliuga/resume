@@ -10,6 +10,8 @@ export default new Vuex.Store({
     portfolio: [],
     works: [],
     links: [],
+    postslist: [],
+    postlink:"",
     fl:'bn'
   },
   actions: {
@@ -21,9 +23,35 @@ export default new Vuex.Store({
     },
     langRu({commit}) {
       commit('LANG_RU')
+    },
+    loadPage({commit}) {
+      commit('LOAD_PAGE')
+    },
+    loadPosts({commit}) {
+      commit('LOAD_POSTS')
+    },
+    setLink({commit}, link) {
+      commit('SET_LINK', link)
     }
   },
   mutations: {
+    SET_LINK(state, link) {
+      state.postlink = link;
+    },
+    LOAD_POSTS(state) {
+      var xhr = new XMLHttpRequest();
+      //posts list
+      xhr.open("GET", "https://ivanshavliuga.github.io/pages/pages.json", false);
+      xhr.send();
+      state.postslist =  window.JSON.parse(xhr.responseText);
+    },
+    LOAD_PAGE(state) {
+      var xhr = new XMLHttpRequest();
+      //page
+      xhr.open("GET", state.postlink, false);
+      xhr.send();
+      state.fl = xhr.responseText;
+    },
     LANG_RU(state) {
       var xhr = new XMLHttpRequest();
       //profile
@@ -50,10 +78,6 @@ export default new Vuex.Store({
       xhr.open("GET", "https://ivanshavliuga.github.io/resume/api/ru/links.json", false);
       xhr.send();
       state.links = window.JSON.parse(xhr.responseText);
-      //profile
-      xhr.open("GET", "https://ivanshavliuga.github.io/pages/gulp-first.html", false);
-      xhr.send();
-      state.fl = xhr.responseText;
     },
     LANG_EN(state) {
       var xhr = new XMLHttpRequest();
@@ -125,6 +149,7 @@ export default new Vuex.Store({
    portfolio: state=>{return state.portfolio},
    works: state=>{return state.works},
    links: state=>{return state.links},
+   postslist: state=>{return state.postslist},
    fl: state=>{return state.fl}
  }
 })
