@@ -1,4 +1,4 @@
-@media (max-width: 499px){
+@media (max-width: 535px){
 	body,html {
      margin: 0;
      padding:0;
@@ -38,7 +38,7 @@
      flex-direction:column!important;
      justify-content:center!important;
      flex-wrap:wrap;
-     width:100%;
+     width:100%!important;
      margin:0;
   }
   .userdata div{
