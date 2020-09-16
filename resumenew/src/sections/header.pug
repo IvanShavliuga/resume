@@ -5,10 +5,10 @@ header
         p {{profile.geo}} 
       li
         p 
-          a(:href="profile.github" :title="profile.github") github.com
+          a(:href="profile.github" rel="noopener" :title="profile.github") github.com
           span.linkprint {{profile.github}}
         p 
-          a(:href="profile.email" :title="profile.email") {{profile.email}}
+          a(:href="profile.email" rel="noopener" :title="profile.email") {{profile.email}}
           span.linkprint {{profile.email}}
       li  
         p(title="The user wanted to hide their phone number") {{profile.phone}}
@@ -20,6 +20,6 @@ header
        p {{profile.prof}}
        p
          span
-           router-link(to="/ru" class="link") RU
+           router-link(to="/ru" rel="noopener" class="link") RU
          span |
-           router-link(to="/en" class="link") EN
+           router-link(to="/en" rel="noopener" class="link") EN

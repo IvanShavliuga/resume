@@ -8,7 +8,7 @@ div
       .works
         article(v-for="(p,k) in posts" :key="k" style="width:80%" :id="'article-'+k")
           h3 {{p.title}}
-          a(@click="pselect(p.link)" target="_blank") {{p.title}}
+          a(@click="pselect(p.link)" rel="noopener" target="_blank") {{p.title}}
           span {{p.category}}
   include sections/footer
   </template>
