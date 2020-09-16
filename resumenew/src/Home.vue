@@ -1,7 +1,6 @@
 <template lang="pug">
 div
   include sections/header
-  span(style="color: #df45a1; background-color: #ccc") Device:  w={{w}} | h={{h}}
   main
     include sections/nav
     include sections/articles
@@ -12,8 +11,6 @@ export default {
   name: 'Home',
   data() {
     return {
-      h: 0,
-      w: 0,
       profile: {},
       education:[],
       work: [],
@@ -32,8 +29,6 @@ export default {
     this.creative = this.$store.getters.creative;
     this.education = this.$store.getters.edu;
     this.fl = this.$store.getters.fl;
-    this.h= window.innerHeight;
-    this.w=window.innerWidth;
   }
 }
 </script>
