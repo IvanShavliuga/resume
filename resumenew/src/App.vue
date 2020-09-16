@@ -4,9 +4,6 @@ router-view
 
 <script>
 export default {
-  name: 'App'/*,
-  created() {
-    this.$router.push('/')
-  }*/
+  name: 'App'
 }
 </script>
