@@ -8,7 +8,7 @@ div
       .works
         article(v-for="(p,k) in portfolio" :key="k" :id="'article-'+k")
           h3 {{p.title}}
-          a(:href="p.sitelink" target="_blank") {{p.sitetitle}}
+          a(:href="p.sitelink" rel="noopener" target="_blank") {{p.sitetitle}}
           span.linkprint {{p.sitelink}}
           p {{p.desc}}
           ul.skills

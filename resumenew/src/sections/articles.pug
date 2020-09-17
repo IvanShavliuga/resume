@@ -3,7 +3,7 @@ section
   .works
     article(v-for="(p,k) in portfolio" :key="k" :id="'article-'+k")
       h3 {{p.title}}
-      a(:href="p.sitelink" target="_blank") {{p.sitetitle}}
+      a(:href="p.sitelink" rel="noopener" target="_blank") {{p.sitetitle}}
       span.linkprint {{p.sitelink}} 
       p {{p.desc}}
       ul.skills 
@@ -13,7 +13,7 @@ section
     li(v-for="(c,k) in creative" :key="'creative_'+k" :id="'creative_'+k") 
       h3 {{c.category}}
       p(v-for="(l,k1) in c.linkslist" :key="'creative_'+k1+'_'+k" :id="'creative_'+k+'_'+k1")
-        a(:href="l.link" target="_blank" :title="l.name") {{l.name}}
+        a(:href="l.link" target="_blank" rel="noopener" :title="l.name") {{l.name}}
         span.linkprint {{l.link}}
       
             

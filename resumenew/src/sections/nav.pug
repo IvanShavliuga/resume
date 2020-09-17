@@ -8,14 +8,14 @@ nav
           b {{profile.prof}}
         p I make site layout to order. 
         p 
-          a(:href="profile.email") {{profile.email}}
+          a(:href="profile.email" rel="noopener") {{profile.email}}
           span.linkprint {{profile.email}}
         p
-          router-link(to="/") Home page
+          router-link(to="/" rel="noopener") Home page
         p
-          router-link(to="/List") My posts
+          router-link(to="/List" rel="noopener") My posts
         p
-          router-link(to="/Portfolio") My portfolio
+          router-link(to="/Portfolio" rel="noopener") My portfolio
     li.item
       h2 Interests
       .images
@@ -36,7 +36,7 @@ nav
         ul
           li.line(v-for="(e,k) in education" :key="k")
             .lineinfo {{e.years}}
-              a(:href="e.link" target="_blank") {{e.caption}}
+              a(:href="e.link" target="_blank" rel="noopener") {{e.caption}}
               span.linkprint {{e.caption}} ({{e.link}})
               span {{e.desc}}
     li.item
@@ -45,6 +45,6 @@ nav
         ul
           li.line(v-for="(w,k) in work" :key="k")
             .lineinfo {{w.years}}
-              a(:href="w.link" target="_blank") {{w.caption}}
+              a(:href="w.link" target="_blank" rel="noopener") {{w.caption}}
               span.linkprint {{w.caption}} ({{w.link}})
               span {{w.desc}}
