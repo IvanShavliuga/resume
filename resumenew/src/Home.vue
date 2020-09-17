@@ -1,6 +1,7 @@
 <template lang="pug">
 div
   include sections/header
+  span text
   main
     include sections/nav
     include sections/articles
