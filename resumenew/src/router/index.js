@@ -6,6 +6,7 @@ import List from '../Postslist.vue'
 import En from '../En.vue'
 import Ru from '../Ru.vue'
 import Portfolio from '../Portfolio.vue'
+import Website from '../Website.vue'
 
 Vue.use(VueRouter)
 
@@ -39,6 +40,11 @@ const routes = [
     path: '/Portfolio',
     name: 'Portfolio',
     component: Portfolio
+  },
+  {
+    path: '/Website',
+    name: 'Website',
+    component: Website
   }
 ]
 
