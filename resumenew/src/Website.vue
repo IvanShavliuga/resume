@@ -2,13 +2,12 @@
 div
   include sections/header
   main
-    include sections/nav
-    include sections/articles
+    iframe(width="100%" height="500px" src="https://ivanshavliuga.github.io/daisy/index.html")
   include sections/footer
 </template>
 <script>
 export default {
-  name: 'Home',
+  name: 'Post',
   data() {
     return {
       profile: {},
@@ -21,14 +20,15 @@ export default {
     }
   },
   created() {
-    this.$store.dispatch('initData')
+    this.$store.dispatch('setLink', 'https://ivanshavliuga.github.io/daisy/index.html');
+    this.$store.dispatch('loadPage')
+    this.fl = this.$store.getters.fl;
     this.profile = this.$store.getters.profile;
     this.social = this.$store.getters.links;
     this.work = this.$store.getters.works;
     this.portfolio = this.$store.getters.portfolio;
     this.creative = this.$store.getters.creative;
     this.education = this.$store.getters.edu;
-    this.fl = this.$store.getters.fl;
   }
 }
 </script>

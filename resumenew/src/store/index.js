@@ -105,10 +105,6 @@ export default new Vuex.Store({
       xhr.open("GET", "https://ivanshavliuga.github.io/resume/api/en/links.json", false);
       xhr.send();
       state.links = window.JSON.parse(xhr.responseText);
-      //profile
-      xhr.open("GET", "https://ivanshavliuga.github.io/pages/gulp-first.html", false);
-      xhr.send();
-      state.fl = xhr.responseText;
     },
    INIT_DATA(state) {
      var xhr = new XMLHttpRequest();
@@ -136,10 +132,6 @@ export default new Vuex.Store({
      xhr.open("GET", "https://ivanshavliuga.github.io/resume/api/ru/links.json", false);
      xhr.send();
      state.links = window.JSON.parse(xhr.responseText);
-     //profile
-     xhr.open("GET", "https://ivanshavliuga.github.io/pages/gulp-first.html", false);
-     xhr.send();
-     state.fl = xhr.responseText;
    }
  },
  getters: {
