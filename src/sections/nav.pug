@@ -1,0 +1,50 @@
+nav
+  ul.menulist
+    li.item 
+      h2 Profile 
+      .desc 
+        h3 {{profile.name}} 
+        p 
+          b {{profile.prof}}
+        p I make site layout to order. 
+        p 
+          a(:href="profile.email" rel="noopener") {{profile.email}}
+          span.linkprint {{profile.email}}
+        p
+          router-link(to="/" rel="noopener") Home page
+        p
+          router-link(to="/List" rel="noopener") My posts
+        p
+          router-link(to="/Portfolio" rel="noopener") My portfolio
+    li.item
+      h2 Interests
+      .images
+        .interes
+          p Podcast
+        .interes
+          p Books
+        .interes
+          p Design    
+    li.item 
+      h2 Skills 
+      .desc 
+        ul.skills 
+          li(v-for="(s,k) in profile.skills" :key="s") {{s}}
+    li.item 
+      h2 Education 
+      .desc
+        ul
+          li.line(v-for="(e,k) in education" :key="k")
+            .lineinfo {{e.years}}
+              a(:href="e.link" target="_blank" rel="noopener") {{e.caption}}
+              span.linkprint {{e.caption}} ({{e.link}})
+              span {{e.desc}}
+    li.item
+      h2 Work experience 
+      .desc
+        ul
+          li.line(v-for="(w,k) in work" :key="k")
+            .lineinfo {{w.years}}
+              a(:href="w.link" target="_blank" rel="noopener") {{w.caption}}
+              span.linkprint {{w.caption}} ({{w.link}})
+              span {{w.desc}}
