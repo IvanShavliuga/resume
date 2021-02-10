@@ -1,0 +1,25 @@
+header
+  .contacts
+    ol
+      li 
+        p {{profile.geo}} 
+      li
+        p 
+          a(:href="profile.github" rel="noopener" :title="profile.github") github.com
+          span.linkprint {{profile.github}}
+        p 
+          a(:href="profile.email" rel="noopener" :title="profile.email") {{profile.email}}
+          span.linkprint {{profile.email}}
+      li  
+        p(title="The user wanted to hide their phone number") {{profile.phone}}
+        p The user wanted to hide their phone number
+  .name 
+     .userdata
+       .photouser
+       h1 {{profile.name}}
+       p {{profile.prof}}
+       p
+         span
+           router-link(to="/ru" rel="noopener" class="link") RU
+         span |
+           router-link(to="/en" rel="noopener" class="link") EN

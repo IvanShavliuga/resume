@@ -1,0 +1,7 @@
+footer
+  ul.social
+    li(v-for="(s,k) in social" :key="social+k") 
+      a(:href="s.link" target="_blank" :id="s.name+'_'+k" rel="noopener") {{s.name}}
+      span.linkprint {{s.link}} 
+  .copyright
+    p &copy; 2020 {{profile.geo}}, {{profile.name}}, {{profile.prof}}     
